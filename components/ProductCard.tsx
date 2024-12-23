@@ -13,6 +13,7 @@ interface Product {
 interface ProductCardProps {
   product: Product;
   renderingType: 'isr' | 'ssr' | 'csr';
+  view: 'grid' | 'list';
 }
 
 export function ProductCard({ product, renderingType }: ProductCardProps) {
